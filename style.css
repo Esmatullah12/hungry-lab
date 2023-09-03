@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     font-weight: 200;
+}
+
+hr{
+    border: none;
+    border-bottom: 1.5px solid black;
 }
 
 .logo{
@@ -11,9 +17,11 @@
 }
 
 nav{
+    /* position: fixed; */
     background-color: #025464;
     padding: 0 3%;
 }
+
 .nav-menu{
     list-style: none;
     display: flex;
@@ -114,3 +122,203 @@ nav{
     top: 0px;
     left: 160px;
 }
+
+/* main section of the gensuke_red.html file */
+
+.container{
+    /* width: 70%; */
+    max-width: 950px;
+    margin: 10px auto;
+}
+
+.product-container{
+    display: flex;
+    padding: 2%;
+}
+
+.product-images{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+.product-images img{
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details{
+    width: 50%;
+    padding: 0 2%
+}
+
+.product-info-list{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.product-info-list li::before {
+    list-style: none;
+    content: ">";
+    color: #000; /* You can specify the color you want */
+    font-weight: bold;
+    font-size: large; /* Optional: Make the > sign bold */
+    margin-right: 5px; /* Optional: Add spacing between the > sign and the text */
+}
+
+.product-title{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.product-price span{
+    font-weight: bold;
+}
+
+.amount-input{
+    padding: 3px;
+    font-size: 0.7rem;
+}
+
+.info-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.cart-btn {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 3px 11px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.cart-btn:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.cart-btn:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.cart-btn:focus {
+  outline: 1px transparent;
+}
+
+.award-container{
+    margin: 20px 0;
+    padding: 5px 10px;
+    border-left: 7px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.award-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-info-container h2{
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.recomendad-list{
+    list-style-position: inside;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.product-fearures{
+    border: 1px solid black;
+    padding: 2%;
+    margin: 20px 0;
+}
+
+.features-label{
+    background-color: black;
+    color: #fff;
+    width: 150px;
+    margin-left: -20px;
+    padding: 10px 30px;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+}
+.feature-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.feature-list{
+    list-style: none;
+}
+
+.product-fearures h3{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.feature-img{
+    /* padding: 7%; */
+}
+
+.feature-img-box{
+    padding: 3% 10%;
+}
+
+.feature-img{
+    width: 100%;
+}
+
+.featue-hr{
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.feature-table{
+    border-collapse: collapse;
+    border: none;
+}
+
+.feature-table td {
+    border: none;
+    border-top: 2px solid black;;
+  }
