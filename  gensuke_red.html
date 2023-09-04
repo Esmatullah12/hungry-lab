@@ -8,95 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
-    <!-- style -->
+       <!-- style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo"><a href=""><img src="images/logo-bio.png" alt=""></a></div>
-        <nav>
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">一般商品 <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="nav-sub-menu">
-                        <li class="nav-sub-menu-item"><a class="hover-me" href="">園芸用品 <i class="fa-solid fa-chevron-right"></i></a>
-                            <ul class="nav-sub-menu-child">
-                                <li class="nav-sub-menu-item-child"><a href="">ベランダー農業女子</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">プロのバラ女子</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-sub-menu-item"><a href="">ペット用品</a></li>
-                        <li class="nav-sub-menu-item"><a href="">洗濯用品</a></li>
-                        <li class="nav-sub-menu-item"><a href="">安全性</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="">業務用商品 <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="nav-sub-menu">
-                        <li class="nav-sub-menu-item"><a class="hover-me" href="">農業用資材<i class="fa-solid fa-chevron-right"></i></a>
-                            <ul class="nav-sub-menu-child">
-                                <li class="nav-sub-menu-item-child"><a href="">げんすけグリーン</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">げんすけレッド</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">げんすけアタック</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">アクティーフ</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">アクティブ・アミノ</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">ザンサーＧＳ</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-sub-menu-item"><a class="hover-me" href="">水質浄化 <i class="fa-solid fa-chevron-right"></i></a>
-                            <ul class="nav-sub-menu-child">
-                                <li class="nav-sub-menu-item-child"><a href="">ウエタドロン</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">げんすけクリーン</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-sub-menu-item"><a href="">生ごみ処理</a><i class="fa-solid fa-chevron-right"></i>
-                            <ul class="nav-sub-menu-child">
-                                <li class="nav-sub-menu-item-child"><a href="">生ゴミ処理菌パクー</a></li>
-                                <li class="nav-sub-menu-item-child"><a href="">生ゴミ処理用培地パクー</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-sub-menu-item"><a href="">安全性</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="">CART</a></li>
-                <li class="nav-item"><a class="nav-link" href="">NEWS</a></li>
-                <li class="nav-item"><a class="nav-link" href="">動画</a></li>
-                <li class="nav-item"><a class="nav-link" href="">義務表示 <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="nav-sub-menu">
-                        <li class="nav-sub-menu-item"><a href="">会社概要</i></a></li>
-                        <li class="nav-sub-menu-item"><a href="">お支払いについて</a></li>
-                        <li class="nav-sub-menu-item"><a href="">送料について</a></li>
-                        <li class="nav-sub-menu-item"><a href="">返品について</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="">CONTACT <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="nav-sub-menu">
-                        <li class="nav-sub-menu-item"><a href="">CONTACT</i></a></li>
-                        <li class="nav-sub-menu-item"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li class="nav-sub-menu-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <header id="header">
+        <div class="navbar">
+            <a href=""><img src="images/logot2.png" alt=""></a>
+           <div class="nav-menu-btns">
+                <button class="bars-btn nav-btn"><img class="bars-icon" src="icons/bars-solid.svg" alt=""></button>
+                <button class="xmark-btn nav-btn active"><img class="xmark-icon" src="icons/xmark-solid.svg" alt=""></button>
+           </div>
+            <nav class="nav-menu">
+                <a class="nav-link" href="">HOME</a>
+                <a class="nav-link" href="">PRODUCTS</a>
+                <a class="nav-link" href="">CART</a>
+                <a class="nav-link" href="">CONTACT</a>
+                <a class="nav-link" href="">ABOUT</a>
+            </nav>
+        </div>
     </header>
-    <main class="container">
+    <main class="container" id="top">
         <div>
             <div class="product-container">
                 <div class="product-images">
-                    <img class="product-image"  src="images/gensuke-red1.jpeg" alt="">
-                    <img class="product-image" src="images/gensuke-red3.jpeg" alt="">
+                    <img class="product-image"  src="images/gensuke-red1.png" alt="">
+                    <img class="product-image" src="images/gensuke-red3.png" alt="">
                     <img class="product-image" src="images/gensuke-red2.jpeg" alt="">
                     <img class="product-image" src="images/gensuke-red4.jpeg" alt="">
                     <img class="product-image" src="images/gensuke-red5.jpeg" alt="">
                     <img class="product-image" src="images/gensuke-red6.jpeg" alt="">
                 </div>
                 <div class="product-details">
-                    <img src="images/new.png" alt="">
+                    <img class="new-baner" src="images/new.png" alt="">
                     <h1 class="product-title">げんすけレッド</h1>
                     <h3 class="product-price"><span>¥4,290</span> (税込) 数量</h3>
-                    <input min="1" class="amount-input" type="number" placeholder="袋">
-                    <input class="cart-btn" type="submit" value="カゴに入れる">
+                    <form class="buy-info" action="">
+                        <input class="amount-input" min="1" class="amount-input" type="number" placeholder="袋">
+                        <button type="submit" class="cart-btn"><img class="cart-icon" src="icons/cart-shopping-solid.svg" alt=""> カゴに入れる</button>
+                    </form>
                     <ul class="product-info-list">
                         <li class="info-item"><a href="">送料についての詳細はこちら</a></li>
                         <li class="info-item"><a href="">返品についての詳細はこちら</a></li>
@@ -143,14 +93,14 @@
                 <div>
                     <h3>少ない堆肥で水はけの良いふかふかな土に</h3>
                     <ul class="feature-list">
-                        <li>・肥効を高める</li>
-                        <li>・リン酸の分解吸収</li>
-                        <li>・団粒構造の生成</li>
-                        <li>・炭酸ガスの生成</li>
-                        <li>・EC・PH調整</li>
-                        <li>・病原菌に強くなる</li>
+                        <li>肥効を高める</li>
+                        <li>リン酸の分解吸収</li>
+                        <li>団粒構造の生成</li>
+                        <li>炭酸ガスの生成</li>
+                        <li>EC・PH調整</li>
+                        <li>病原菌に強くなる</li>
                         <li>（根を保護するエンドファイトの働き</li>
-                        <li>・有機肥料・堆肥から発生する臭気・ガス・害虫の発生を抑える</li>
+                        <li>有機肥料・堆肥から発生する臭気・ガス・害虫の発生を抑える</li>
                     </ul>
                 </div>
                 <div class="feature-img-box">
@@ -181,26 +131,49 @@
                     <tr>
                         <td>使用量の <br> 目安 <br>10Rあたり </td>
                         <td>
-                            ● 土作り / 10袋〜15袋を土に混ぜこんでください<br>
-                            ● 元肥・定植時 / 10袋を土に混ぜこむか土の上に撒いてください<br>
-                            ● 追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください<br>
-                            ● プランター / 500g  ● ポット苗 / 5g〜15g  ● 10号鉢 / 400g  ● 7号鉢 / 200g<br>
-                            ※ 上記使用量は目安です。作物や施肥量により異なります。
+                            <ul>
+                                <li>土作り / 10袋〜15袋を土に混ぜこんでください</li>
+                                <li> 元肥・定植時 / 10袋を土に混ぜこむか土の上に撒いてください</li>
+                                <li>追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください</li>
+                                <li> プランター / 500g  ● ポット苗 / 5g〜15g  ● 10号鉢 / 400g  ● 7号鉢 / 200g</li>
+                                <li>※ 上記使用量は目安です。作物や施肥量により異なります。</li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td>効果的な <hr>
+                        <td>効果的な<br>
                             使用法方
                         </td>
                         <td>
-                            ・ 当社商品げんすけグリーン（堆肥）・肥料・水との併用で、より効果的に土の団粒を形成します。<br>
-                            ・ 当社商品アクティーフ（液体）と併用すると効果的に働きます。
+                            <ul>
+                                <li>当社商品げんすけグリーン（堆肥）・肥料・水との併用で、より効果的に土の団粒を形成します。</li>
+                                <li>当社商品アクティーフ（液体）と併用すると効果的に働きます。</li>
+                            </ul>
                         </td>
                     </tr>
                     <tr></tr>
                 </tbody>
             </table>
         </div>
+        <div class="related-product">
+            <p class="related-product-title">関連商品</p>
+            
+            <div class="related-product-img">
+                <div>
+                    <img src="images/gensuke-green.png" alt="">
+                    <p>げんすけレッド <br> ¥3,960(税込)</p>
+                </div>
+                <div>
+                    <img src="images/gensuke-attack.png" alt="">
+                    <p>げんすけグリーン <br> ¥2,200(税込)</p>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer class="container">
+        <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
+    </footer>
+    <a href="#top"><button class="back-top-btn">Back to top</button></a>
+    <script src="script.js"></script>
 </body>
 </html>
