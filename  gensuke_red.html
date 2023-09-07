@@ -13,13 +13,14 @@
 </head>
 <body>
     <header id="header">
-       <a href=""><img class="gensuke-red-img" src="images/gensuke green.png" alt=""></a>
+       <a href=""><img class="gensuke-red-img" src="images/gensuke red.png" alt=""></a>
        <h1 class="product-name">Gensuke RED</h1>   
     </header>
     <nav>
         <nav>
             <div class="navbar">
-                <button class="bars-btn"><img src="icons/bars-solid.svg" alt=""></button>
+                <button class="bars-btn"><img class="open-book-icon" src="icons/open-book.png" alt=""></button><br>
+                <span>Menu</span>
                 <div class="navbar-menu">
                     <ul class="sidebar-menu">
                         <li class="menu-item">Home</li>
@@ -40,9 +41,16 @@
         <div>
             <div class="product-container">
                 <div class="product-images">
+                    <img class="new-baner" src="images/new.png" alt="">
                     <img class="product-image"  src="images/gensuke-red1.png" alt="">
                     <img class="product-image" src="images/gensuke-red3.png" alt="">
-                    <img class="new-baner" src="images/new.png" alt="">
+                </div>
+                <div class="overlay"></div>
+                <div class="image-popup">
+                    <button class="close-popup"><img src="icons/xmark-solid.svg" alt=""></button>
+                    <img class="popup-content" id="popupImage" src="images/gensuke-red1.png" alt="">
+                    <button class="next-btn" id="nextButton"><img src="icons/angle-right-solid.svg" alt="" srcset=""></button>
+                    <button class="back-btn" id="nextButton"><img src="icons/angle-left-solid.svg" alt="" srcset=""></button>
                 </div>
                 <div class="product-details">
                     <h1 class="product-title">げんすけレッド</h1>
@@ -164,20 +172,13 @@
         </div>
         <div class="related-product">
             <p class="related-product-title">関連商品</p>
-            
-            <div class="related-product-img">
-                <div class="img-container">
-                    <img src="images/gensuke-green.png" alt="">
-                    <p>げんすけレッド <br> ¥3,960(税込)</p>
-                </div>
-                <div class="img-container">
-                    <img src="images/gensuke-attack.png" alt="">
-                    <p>げんすけグリーン <br> ¥2,200(税込)</p>
-                </div>
+            <div class="related-products">
+                <a href=""><img class="related-product-img" src="images/gensuke-green.png" alt=""><p>げんすけレッド <br> ¥3,960(税込)</p></a>
+                <a href=""> <img class="related-product-img" src="images/gensuke-attack.png" alt=""><p>げんすけグリーン <br> ¥2,200(税込)</p></a>
             </div>
         </div>
+        <a class="back-top-btn" href="#header">Back to top</a>
     </main>
-    
     <footer class="container">
         <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
