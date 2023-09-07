@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-family: "メイリオ", Poppins, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 200;
     text-decoration: none;
 }
 
 body {
     padding:5vh 7%;
     background-color: #E6E6E6;
+    line-height: 1.6;
 }
 
 h1{
@@ -150,7 +151,6 @@ main {
 }
 
 .product-images{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -181,6 +181,8 @@ main {
     max-width: 100%;
     height: auto;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
 }
 
 .close-popup{
@@ -211,8 +213,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); 
     z-index: 7;
     display: none;
 }
@@ -244,7 +246,6 @@ main {
     list-style: none;
     content: ">";
     color: #000;
-    font-weight: bold;
     font-size: large; 
     margin-right: 5px;
 }
@@ -275,7 +276,7 @@ main {
     font-size: 1rem;
     font-weight: bold;
     width: 60px;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 0.5px solid gray;
     margin-right: 10px;
 
@@ -293,12 +294,9 @@ main {
   color: #000;
   cursor: pointer;
   display: block;
-  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 0.8rem;
-  font-weight: bold;
   line-height: 100%;
   letter-spacing: -1px;
-  margin: 0;
   outline: 0;
   padding: 6px 10px;
   text-align: center;
@@ -400,12 +398,8 @@ th, td {
     text-align: left;
 }
 
-th {
-    background-color: #F8F1F1;
-}
-
 .product-fearures{
-    border: 1px solid black;
+    border: 2px solid #E57C23;
     padding: 2%;
     margin: 20px 0;
     position: relative;
@@ -413,7 +407,7 @@ th {
 }
 
 .features-label{
-    background-color: black;
+    background-color: #E57C23;
     color: #fff;
     display: inline;
     position: absolute;
@@ -423,7 +417,7 @@ th {
     font-weight: bold;
 }
 .feature-container{
-    margin-top: 20px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -468,7 +462,7 @@ th {
     border-radius: 5px;
     color: #fff;
     display: inline;
-    padding: 3px 10px;
+    padding: 5px 10px;
 }
 
 .related-products{
@@ -516,7 +510,7 @@ th {
     color: #fff;
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 65px;
     border: none;
     padding: 7px 15px;
     z-index: 5; 
