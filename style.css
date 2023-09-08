@@ -8,8 +8,7 @@
 }
 
 body {
-    padding-top: 7vh;;
-    background-color: #F9FCFD;
+    background-color: #E6E6E6;
     line-height: 1.6;
 }
 
@@ -49,6 +48,7 @@ hr{
 
 
 header{
+    padding: 20px;
     max-width: 930px;
     margin: 0 auto;
     display: flex;
@@ -56,16 +56,17 @@ header{
 }
 
 nav {
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
 .navbar{
     position: fixed;
-    background-color: transparent;
+    /* background-color: transparent; */
     top: 0;
     right: 0;
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
     margin: 0 auto;
     padding: 10vh 50px 3vh 50px;
     border-radius: 0 0 0 30px;
@@ -74,9 +75,8 @@ nav {
 
 .navbar:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    background-color: white;
     border: 0.5px solid gray;
-    transition: background-color 1s, box-shadow .6s;
+    transition: box-shadow .6s;
     
 }
 
@@ -89,7 +89,7 @@ nav {
     display: block;
 }
 
-.bars-btn{
+.menu-btn{
     background-color: transparent;
     border: none;
 }
@@ -102,7 +102,6 @@ nav {
     display: none;
 }
 
-
 .sidebar-menu{
     list-style: none;
     text-transform: uppercase;
@@ -114,8 +113,9 @@ nav {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     list-style: none;
-    margin: 0 15% 0px;
+    margin: 10% auto 5%;
     background-color: transparent;
+    max-width: 100px;
 }
 
 .menu-item{
@@ -167,7 +167,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 500px;
+    min-width: 350px;
     margin: 20px auto;
     border: 1px solid gray;
     border-radius: 20px;
@@ -255,9 +255,9 @@ main {
 }
 
 .product-title{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .product-price span{
@@ -409,7 +409,7 @@ th, td {
 
 .product-fearures{
     border: 1px solid black;
-    padding: 2%;
+    padding: 2% 0;
     margin: 20px 0;
     position: relative;
     z-index: 3;
@@ -427,28 +427,40 @@ th, td {
     font-weight: bold;
 }
 .feature-container{
+    padding: 2%;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-items: center;
+    row-gap: 30px;
 }
 
+.feature-info ul{
+    margin-bottom: 0;
+}
 
 .usecase-container{
-    margin-top: 60px;
+    padding:2% 5%;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-size: 0.8rem;
 }
 
 .usecase-img-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     gap: 10px;
 }
 
+.usecase-img-container img{
+    width: 100%;
+}
+
 .use-container{
-    margin-top: 80px;
+    margin-top: 40px;
+    padding: 2% 5%;
+    font-size: 0.8rem;
 }
 
 
@@ -468,15 +480,9 @@ th, td {
 }
 
 .feature-img-box{
+    height: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid gray;
-    margin-left: 20px;
-    padding: 0;
-    padding: 3%;
-    border-radius: 13px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-
 }
 
 .usecase-img-box{
@@ -489,9 +495,13 @@ th, td {
 }
 
 .feature-img{
+    
     width: 100%;
-    height: auto;
-    border: 1px solid black;
+    border: 0.5px solid black;
+    padding: 3%;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
 }
 
 .related-product-title{
@@ -532,46 +542,55 @@ th, td {
 .feature-table td {
     border: none;
     border-top: 0.5px solid black;;
-  }
-
-  footer {
-    background-color: transparent;
-    color: black;
-    padding: 10px;
-    text-align: center;
 }
+
+footer {
+    height: 100vh;
+}   
 
 .back-top-btn{
     background-color: #7C9D96;
     color: #000;
     position: fixed;
-    bottom: 50px;
-    right: 65px;
+    bottom: 5%;
+    right: 5%;
     border: none;
     padding: 7px 15px;
     z-index: 5; 
 }
 
 .footer-container{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 90vh;
-    background-image: url(images/footer_bg.jpg);
+    background-image: url(images/footer_bg_large.jpg);
     background-size: cover;
-    background-position: bottom;
-    backdrop-filter: blur(10px);
+    background-position: bottom left;
+    padding: 10vh 50px 50px 50px;
+    text-align: center;
+}
+
+.footer-text{
+    color: white;
+}
+
+.footer-content{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 20px;
-    padding: 10vh 50px 50px 50px;
     text-align: left;
 }
 
 .ueta-payments{
     border: 0.5px solid black;
     border-radius: 30px;
-    padding: 30px;
+    padding: 20px 30px;
     backdrop-filter: blur(1.5px);
-    margin-right: 30px;
+}
+
+.about-ueta{
+    font-size: 0.8rem;
 }
 
 .gensuke-red{
@@ -603,18 +622,17 @@ th, td {
 
 .payments-card{
     height: 40px;
-    padding: 5px;
+    padding: 3px;
     background-color: #F9FCFD;
     border: 0.5px solid black;
     border-radius: 7px;
-    margin-right: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .footer-title{
-    margin: 40px 0 10px 0;
-    font-size: 1.5rem;
-    font-weight: 400;
+    margin: 30px 0 10px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .fotter-link{
@@ -631,17 +649,73 @@ th, td {
 }
 
 @media screen and (max-width: 820px) {
+    .open-book-icon{
+        width: 20px;
+    }
+
+    .navbar:hover .open-book-icon{
+        width: 30px;
+        transition: width 0.4s;
+    }
+
+    .gensuke-logo{
+        height: 70px;
+    }
     .product-image:last-child{
         display: none;
     }
     .navbar{
-        width: 200%;
+        border-radius: 0 0 30px 30px;
+        height: 90vh;
+        width: 100%;
     }
+
+    .menu-btn {
+        position: fixed;
+        right: 10%;
+        top: 10%;
+        transform: translateY(-50%);
+        transition: right 2s, transform 2s;
+        }
+
+    .menu-btn:hover {
+        right: 50%;
+        transform: translateY(-50%) translateX(050%);
+    }
+
+    .feature-container{
+        border: 1px red;
+        height: 100vh;
+        font-size: 0.9rem;
+        padding: 0 5%;
+    }
+
+    .usecase-img-box{
+        font-size: 0.9rem;
+    }
+
+    .use-container{
+        font-size: 0.65rem;
+    }
+
     .footer-container{
+        background-image: url(images/footer_bg_small.jpg);
+        background-size: cover;
         padding: 20px;
-        gap: 10px;
-        height: 50vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100lvh;
     }
+    .back-top-btn, .products, .about-us, .services{
+        display: none;
+    }
+
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+
+
     .gensuke-red{
         width: 40px;
     }

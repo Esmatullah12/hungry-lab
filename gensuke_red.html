@@ -13,13 +13,12 @@
 </head>
 <body>
     <header id="header">
-       <img class="gensuke-logo" src="images/G.RED 2.jpg" alt="" srcset="">   
+       <img class="gensuke-logo" src="images/G.RED.png" alt="" srcset="">   
     </header>
     <nav>
         <nav>
             <div class="navbar">
-                <button class="bars-btn"><img class="open-book-icon" src="icons/open-book.png" alt=""></button><br>
-                <span>Menu</span>
+                <button class="menu-btn"><img class="open-book-icon" src="icons/open-book.png" alt=""><br><span>Menu</span></button><br>
                 <div class="navbar-menu">
                     <ul class="sidebar-menu">
                         <li class="menu-item">Home</li>
@@ -52,7 +51,7 @@
                     <button class="back-btn" id="nextButton"><img src="icons/angle-left-solid.svg" alt="" srcset=""></button>
                 </div>
                 <div class="product-details">
-                    <h1 class="product-title">げんすけレッド</h1>
+                    <h1 class="product-title">Gensuke Red</h1>
                     <h3 class="product-price"><span>¥4,290</span> (税込) 数量</h3>
                     <form class="buy-info" action="">
                         <input class="amount-input" min="1" class="amount-input" type="number" placeholder="袋">
@@ -102,7 +101,7 @@
         <div class="product-fearures">
             <div class="features-label">特徴＆効果</div>
             <div class="feature-container">
-                <div>
+                <div class="feature-info">
                     <h3>少ない堆肥で水はけの良いふかふかな土に</h3>
                     <ul class="feature-list">
                         <li>肥効を高める</li>
@@ -118,21 +117,22 @@
                 <div class="feature-img-box">
                     <img class="feature-img" src="images/tomato.jpeg" alt="">
                 </div>
+                
             </div>
             <div class="features-label">使用例</div>
             <div class="usecase-container">
                 <h3>★ マルチ前の畝上　表層散布も可能！</h3>
                 <div class="usecase-img-container">
                     <div class="usecase-img-box">
-                        <img class="feature-img" src="images/planet-img1.jpeg" alt="">
+                        <img src="images/planet-img1.jpeg" alt="">
                         キュウリ：１反あたり　10〜20袋
                     </div>
                     <div class="usecase-img-box">
-                        <img class="feature-img" src="images/planet-img2.jpeg" alt="">
+                        <img src="images/planet-img2.jpeg" alt="">
                         トウモロコシ：１反あたり　５袋
                     </div>
                     <div class="usecase-img-box">
-                        <img class="feature-img" src="images/planet-img3.jpeg" alt="">
+                        <img src="images/planet-img3.jpeg" alt="">
                         ネギ：１反あたり　3〜5袋
                     </div>
                 </div>
@@ -178,60 +178,63 @@
                 <a href=""> <img class="related-product-img" src="images/gensuke-attack.png" alt=""><p>げんすけグリーン <br> ¥2,200(税込)</p></a>
             </div>
         </div>
-        <a class="back-top-btn" href="#header">Back to top</a>
+        <a class="back-top-btn" href="#header">トップに戻る</a>
     </main>
     <footer class="footer-container">
-        <div class="ueta-payments">
-            <div class=" flex-container">
-                <img class="gensuke-red" src="images/gensuke red.png" alt="">
-                <p class="ueta-title">Ueta Labo</p>
+        <div class="footer-content">
+            <div class="ueta-payments">
+                <div class=" flex-container">
+                    <img class="gensuke-red" src="images/gensuke red.png" alt="">
+                    <h3 class="ueta-title">Ueta Labo</h2>
+                </div>
+                <p class="about-ueta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem neque minus at eius unde quam, voluptas sequi ex rerum recusandae deserunt error veritatis</p>
+                <h3 class="payments-title">Accepted Payments</h3>
+                <div class="payments-cards">
+                    <img class="payments-card" src="images/payments/visa.png" alt="" srcset="">
+                    <img class="payments-card" src="images/payments/masterCard.png" alt="" srcset="">
+                    <img class="payments-card" src="images/payments/nicos.jpeg" alt="" srcset="">
+                    <img class="payments-card" src="images/payments/ufj.png" alt="" srcset="">
+                    <img class="payments-card" src="images/payments/dcLogo.png" alt="" srcset="">
+                    <img class="payments-card" src="images/payments/americanExpress.png" alt="" srcset="">
+                    <img class="payments-card" src="images/payments/dinersClubInternational.png" alt="" srcset="">
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem neque minus at eius unde quam, voluptas sequi ex rerum recusandae deserunt error veritatis</p>
-            <h3 class="payments-title">Accepted Payments</h3>
-            <div class="payments-cards">
-                <img class="payments-card" src="images/payments/visa.png" alt="" srcset="">
-                <img class="payments-card" src="images/payments/masterCard.png" alt="" srcset="">
-                <img class="payments-card" src="images/payments/nicos.jpeg" alt="" srcset="">
-                <img class="payments-card" src="images/payments/ufj.png" alt="" srcset="">
-                <img class="payments-card" src="images/payments/dcLogo.png" alt="" srcset="">
-                <img class="payments-card" src="images/payments/americanExpress.png" alt="" srcset="">
-                <img class="payments-card" src="images/payments/dinersClubInternational.png" alt="" srcset="">
+            <div class="products">
+                <h3 class="footer-title">PRODUCTS</h3>
+                <a class="fotter-link" href="">げんすけグリーン</a>
+                <a class="fotter-link" href="">げんすけレッド</a>
+                <a class="fotter-link" href="">げんすけアタック</a>
+                <a class="fotter-link" href="">アクティーフ</a>
+                <a class="fotter-link" href="">アクティブ・アミノ</a>
+                <a class="fotter-link" href="">ザンサーＧＳ</a>
+                <a class="fotter-link" href="">ウエタドロン</a>
+                <a class="fotter-link" href="">げんすけクリーン</a>
+                <a class="fotter-link" href="">生ゴミ処理菌パクー</a>
+                <a class="fotter-link" href="">生ゴミ処理用培地パクー</a>
+                <a class="fotter-link" href="">野菜元気サプリ</a>
+                <a class="fotter-link" href="">野菜元気シャワー</a>
+                <a class="fotter-link" href="">バラ元気サプリ</a>
+                <a class="fotter-link" href="">バラ元気シャワー</a>
+            </div>
+            <div class="about-us">
+                <h3 class="footer-title">ABOUT</h3>
+                <a class="fotter-link" href="">会社概要</a>
+                <a class="fotter-link" href="">賞</a>
+                <a class="fotter-link" href="">NEWS</a>
+                <a class="fotter-link" href="">送料について</a>
+                <a class="fotter-link" href="">返品について</a>
+                <a class="fotter-link" href="">会社概要</a>
+            </div>
+            <div class="services">
+                <h3 class="footer-title">CONTACT</h3>
+                <a class="fotter-link" href="">Contact</a>
+                <a class="fotter-link" href="">Facebook</a>
+                <a class="fotter-link" href="">Instagram</a>
+                <a class="fotter-link" href="">Youtube</a>
+                <a class="fotter-link" href="">Get Location</a>
             </div>
         </div>
-        <div class="products">
-            <h3 class="footer-title">PRODUCTS</h3>
-            <a class="fotter-link" href="">げんすけグリーン</a>
-            <a class="fotter-link" href="">げんすけレッド</a>
-            <a class="fotter-link" href="">げんすけアタック</a>
-            <a class="fotter-link" href="">アクティーフ</a>
-            <a class="fotter-link" href="">アクティブ・アミノ</a>
-            <a class="fotter-link" href="">ザンサーＧＳ</a>
-            <a class="fotter-link" href="">ウエタドロン</a>
-            <a class="fotter-link" href="">げんすけクリーン</a>
-            <a class="fotter-link" href="">生ゴミ処理菌パクー</a>
-            <a class="fotter-link" href="">生ゴミ処理用培地パクー</a>
-            <a class="fotter-link" href="">野菜元気サプリ</a>
-            <a class="fotter-link" href="">野菜元気シャワー</a>
-            <a class="fotter-link" href="">バラ元気サプリ</a>
-            <a class="fotter-link" href="">バラ元気シャワー</a>
-        </div>
-        <div class="about-us">
-            <h3 class="footer-title">ABOUT</h3>
-            <a class="fotter-link" href="">会社概要</a>
-            <a class="fotter-link" href="">賞</a>
-            <a class="fotter-link" href="">NEWS</a>
-            <a class="fotter-link" href="">送料について</a>
-            <a class="fotter-link" href="">返品について</a>
-            <a class="fotter-link" href="">会社概要</a>
-        </div>
-        <div class="services">
-            <h3 class="footer-title">CONTACT</h3>
-            <a class="fotter-link" href="">Contact</a>
-            <a class="fotter-link" href="">Facebook</a>
-            <a class="fotter-link" href="">Instagram</a>
-            <a class="fotter-link" href="">Youtube</a>
-            <a class="fotter-link" href="">Get Location</a>
-        </div>
+        <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
