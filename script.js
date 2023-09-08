@@ -5,7 +5,25 @@ const backImageBtn = document.querySelector(".back-btn")
 const popupImage = document.querySelector(".popup-content")
 const closePopupBtn = document.querySelector('.close-popup')
 const popupBackground = document.querySelector(".overlay")
+const menuBtn = document.querySelector(".menu-btn")
+const navbar = document.querySelector(".navbar")
+const navbarMenu = document.querySelector('.navbar-menu')
 
+
+menuBtn.addEventListener("click", () =>{
+    navbar.style.border = "none"
+    navbar.style.boxShadow = "none"
+    navbar.style.backgroundColor = "transparent"
+    navbarMenu.style.display = "none"
+
+})
+
+menuBtn.addEventListener("mouseover", () =>{
+    navbar.style.border = "0.5px solid gray"
+    navbar.style.boxShadow = "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px"
+    navbar.style.backgroundColor = "white"
+    navbarMenu.style.display = "block"
+})
 
 productImages.forEach(productImage => {
     productImage.addEventListener('click', (event) =>{

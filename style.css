@@ -8,7 +8,6 @@
 }
 
 body {
-    padding-top: 7vh;;
     background-color: #F9FCFD;
     line-height: 1.6;
 }
@@ -49,6 +48,7 @@ hr{
 
 
 header{
+    padding: 20px;
     max-width: 930px;
     margin: 0 auto;
     display: flex;
@@ -56,7 +56,9 @@ header{
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;align-items: center;
 }
 
 .navbar{
@@ -64,8 +66,7 @@ nav {
     background-color: transparent;
     top: 0;
     right: 0;
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
     margin: 0 auto;
     padding: 10vh 50px 3vh 50px;
     border-radius: 0 0 0 30px;
@@ -89,7 +90,7 @@ nav {
     display: block;
 }
 
-.bars-btn{
+.menu-btn{
     background-color: transparent;
     border: none;
 }
@@ -114,8 +115,10 @@ nav {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     list-style: none;
-    margin: 0 15% 0px;
+    margin: 10% auto 5%;
     background-color: transparent;
+    max-width: 100px;
+    border: 1px solid black;
 }
 
 .menu-item{
@@ -167,7 +170,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 500px;
+    min-width: 350px;
     margin: 20px auto;
     border: 1px solid gray;
     border-radius: 20px;
@@ -427,28 +430,41 @@ th, td {
     font-weight: bold;
 }
 .feature-container{
+    padding: 2%;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
+    gap: 10px 30px;
+}
+
+.feature-info{
+    width: 100%;
+    margin: 10px auto;
 }
 
 
 .usecase-container{
-    margin-top: 60px;
+    padding: 2%;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-size: 0.8rem;
 }
 
 .usecase-img-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
     gap: 10px;
 }
 
+.usecase-img-container img{
+    width: 100%;
+}
+
 .use-container{
-    margin-top: 80px;
+    margin-top: 40px;
+    padding: 2%;
 }
 
 
@@ -470,14 +486,8 @@ th, td {
 .feature-img-box{
     display: flex;
     align-items: center;
-    border: 1px solid gray;
-    margin-left: 20px;
-    padding: 0;
-    padding: 3%;
-    border-radius: 13px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-
 }
+
 
 .usecase-img-box{
     border-radius: 10px;
@@ -490,8 +500,13 @@ th, td {
 
 .feature-img{
     width: 100%;
+    /* max-width: 450px; */
     height: auto;
     border: 1px solid black;
+    padding: 3%;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
 }
 
 .related-product-title{
@@ -631,12 +646,40 @@ th, td {
 }
 
 @media screen and (max-width: 820px) {
+    .gensuke-logo{
+        height: 70px;
+    }
     .product-image:last-child{
         display: none;
     }
     .navbar{
-        width: 200%;
+        height: 90vh;
+        width: 100%;
     }
+    .menu-btn {
+        position: fixed;
+        right: 10%; /* Start from the right */
+        top: 10%;
+        transform: translateY(-50%);
+        transition: right 2s, transform 2s; /* Apply transition to right and transform */
+    }
+
+    .menu-btn:hover {
+        right: 50%; /* Reset the right position */
+
+        transform: translateY(-50%) translateX(050%); /* Move horizontally to the left */
+    }
+
+    .feature-container{
+        font-size: 0.9rem;
+        padding: 0 5%;
+    }
+
+    .usecase-img-box{
+        font-size: 0.9rem;
+    }
+
+
     .footer-container{
         padding: 20px;
         gap: 10px;
