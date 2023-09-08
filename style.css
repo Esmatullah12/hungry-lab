@@ -8,7 +8,7 @@
 }
 
 body {
-    /* padding:5vh 7%;; */
+    padding-top: 7vh;;
     background-color: #F9FCFD;
     line-height: 1.6;
 }
@@ -28,7 +28,7 @@ hr{
 }
 
 .gensuke-logo{
-    height: 150px;
+    height: 100px;
 }
 
 .product-image{
@@ -67,7 +67,7 @@ nav {
     width: 100%;
     max-width: 250px;
     margin: 0 auto;
-    padding: 5vh 50px;
+    padding: 10vh 50px 3vh 50px;
     border-radius: 0 0 0 30px;
     z-index: 6;
 }
@@ -494,17 +494,6 @@ th, td {
     border: 1px solid black;
 }
 
-.featue-hr{
-    margin: 15px 0;
-    border: none;
-    border-bottom: 2px solid black;
-}
-
-.feature-table{
-    border-collapse: collapse;
-    border: none;
-}
-
 .related-product-title{
     background-color: #1f4068;
     color: #fff;
@@ -518,8 +507,6 @@ th, td {
     text-align: center;
     font-size: 0.8rem;
 }
-
-
 
 .related-products a{
     color: black;
@@ -544,7 +531,7 @@ th, td {
 
 .feature-table td {
     border: none;
-    border-top: 2px solid black;;
+    border-top: 0.5px solid black;;
   }
 
   footer {
@@ -594,9 +581,6 @@ th, td {
 
 .ueta-title{
     font-size: 2.8rem;
-    
-}
-.ueta-title{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #E50113;
@@ -618,7 +602,7 @@ th, td {
 }
 
 .payments-card{
-    height: 50px;
+    height: 40px;
     padding: 5px;
     background-color: #F9FCFD;
     border: 0.5px solid black;
@@ -652,6 +636,20 @@ th, td {
     }
     .navbar{
         width: 200%;
+    }
+    .footer-container{
+        padding: 20px;
+        gap: 10px;
+        height: 50vh;
+    }
+    .gensuke-red{
+        width: 40px;
+    }
+    .ueta-title{
+        font-size: 1.6rem;
+    }
+    .payments-title{
+        font-size: 1.1rem;
     }
 }
 
