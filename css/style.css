@@ -41,8 +41,6 @@ header{
 }
 
 nav {
-    display: flex;
-    align-items: center;
     text-align: center;
 }
 
@@ -59,9 +57,9 @@ nav {
 
 .navbar:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    background-color: white;
     border: 0.5px solid gray;
-    transition: box-shadow .6s;
-    
+    transition: box-shadow .6s    
 }
 
 .navbar:hover .open-book-icon{
@@ -79,7 +77,7 @@ nav {
 }
 
 .open-book-icon{
-    width: 35px;
+    width: 40px;
 }
 
 .navbar-menu{
@@ -88,8 +86,6 @@ nav {
 
 .sidebar-menu{
     list-style: none;
-    text-transform: uppercase;
-    background-color: transparent;
 }
 
 .menu-icon{
@@ -128,7 +124,6 @@ nav {
 main {
     padding:5vh 7%;
     margin: 0 auto;
-    background-color: transparent;
     padding: 20px;
     max-width: 930px;
 }
@@ -207,9 +202,7 @@ main {
     display: none;
 }
 
-
 .product-details{
-    align-items: center;
     width: 100%;
     padding: 0 2%
 }
@@ -220,7 +213,6 @@ main {
     width: 50px;
     border-radius: 50%;
     border: 2px solid green;
-    margin: 0;
     position: absolute;
 }
 
@@ -244,7 +236,6 @@ main {
 
 .gensuke-attack-title{
     color: #F18D00;
-
 }
 
 .gensuke-green-title{
@@ -253,7 +244,6 @@ main {
 
 .title{
     font-size: 2.1rem;
-    margin-top: 10px;
     font-weight: 600;
 }
 
@@ -266,12 +256,12 @@ main {
     align-items: center;
     margin-top: 10px;
 }
+
 .info-item a{
     color: black;
 }
 
 .amount-input{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 3px 5px;
     font-size: 1rem;
@@ -706,4 +696,4 @@ footer {
     }
 }
 
-/* 419 */
+/* 719 */
