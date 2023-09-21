@@ -189,23 +189,23 @@ body {
 }
 
 .agriculture{
-    background-image: url("/Users/SilkRoad/Desktop/Ordinary Repo/hungry-lab copy/images/agriculture/agriculture2.jpg");
+    background-image: url(../images/agriculture/agriculture2.jpg);
 }
 
 .water-purification{
-    background-image: url("/Users/SilkRoad/Desktop/Ordinary Repo/hungry-lab copy/images/water-purification/water2.jpg");
+    background-image: url(../images/water-purification/water2.jpg);
 }
 
 .garbage{
-    background-image: url("/Users/SilkRoad/Desktop/Ordinary Repo/hungry-lab copy/images/garbage/garbage2.jpg");
+    background-image: url(../images/garbage/garbage2.jpg);
 }
 
 .gardening{
-    background-image: url("/Users/SilkRoad/Desktop/Ordinary Repo/hungry-lab copy/images/gardening/gardening4.jpg");
+    background-image: url(../images/gardening/gardening4.jpg);
 }
 
 .home{
-    background-image: url("/Users/SilkRoad/Desktop/Ordinary Repo/hungry-lab copy/images/home/home2.jpg");
+    background-image: url(../images/home/home2.jpg);
 }
 
 .overlay{
