@@ -4,8 +4,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ueta La babo</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
+    <!-- Swipper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- CSS styling -->
+    <link rel="stylesheet" href="css/home-page.css">
 </head>
 <body>
-    <a href=" gensuke_red.html">Gensuke red</a>
+    <header>
+        <nav class="navbar">
+            <a href=""><img class="company-logo-img" src="images/company/company-logo.png" alt=""></a>
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item"><a href="">HOME</a></li>
+                <li class="navbar-menu-item"><a href="">PRODUCTS<i class="fa-solid fa-angle-down"></i></a></li>
+                <li class="navbar-menu-item"><a href="">CONTACT<i class="fa-solid fa-angle-down"></i></a></li>
+                <li class="navbar-menu-item"><a href="">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="flex-container container hero">
+                <div class="hero-text">
+                    <P class="sologan">Save the Earth</P>
+                    <p class="hero-short-text">Empowering a cleaner, greener world with natural products for planet and home hygiene.</p>
+                    <div class="user-btns">
+                        <button class="login-btn btn">Login</button>
+                        <button class="signup-btn btn">Sign up</button>
+                    </div>
+                </div>
+                <div class="hero-img-container">
+                    <img class="hero-img" src="images/company/emma-valerio-acdcAUKeA5A-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="profile">
+            <div class="services container">
+                <div class="service">
+                    <div class="service-img-container">   
+                        <img class="service-icon" src="icons/research.png" alt="">
+                    </div> 
+                    <p>Research</p>
+                </div>
+                <div class="service">
+                    <div class="service-img-container">   
+                        <img class="service-icon" src="icons/consulting2.png" alt="">
+                    </div> 
+                    <p>consulting</p>
+                </div>
+                <div class="service">
+                    <div class="service-img-container">   
+                        <img class="service-icon" src="icons/delivery.png" alt="">
+                    </div> 
+                    <p>Delivery</p>
+                </div>
+                <div class="service">
+                    <div class="service-img-container">   
+                        <img class="service-icon" src="icons/selling.png" alt="">
+                    </div> 
+                    <p>Selling</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container about">
+                <h2 class="sub-title">Save the earth</h2>
+                <p>
+                    微生物は大昔から
+                    地球上のあらゆる場所に住んでいます。
+                    大気、土、水、
+                    そしてすべての生きものに深く関わっており、
+                    微生物の働きで私たちの住む
+                    現在の環境が築きあげられてきたといえます。
+                </p>
+                <p>
+                    その自然体系の基本である微生物を活用することで、
+                    環境の改善につながり、安全でより優れた効果が出るはずだと考え
+                    商品を開発してきました。
+                </p>
+                <p>
+                    Ueta LABOが扱う有用微生物とは
+                    「乳酸菌」「光合成細菌」を中心とした
+                    ”善玉菌”と呼ばれている自然界に存在する身近な微生物です。
+                    遺伝子操作で人工的に作られた微生物ではないので、
+                    肌に触れたり、口に入っても全く問題なく
+                    自然環境を汚さないのが特徴です。
+                </p>
+            </div>
+        </section>
+        <section id="products">
+            <div class="container">
+                <h2 class="sub-title">Our Produts</h2>
+                <div class="products-container">
+                    <div class="agriculture bg-img-container">
+                        <div class="overlay"></div>
+                        <h2 class="products-title">AGRICULTURE</h2>
+                        <P class="agriculture-short-info">to enrich the soil</P>
+                    </div>
+                    <div class="swiper cards-container">
+                        <div class="cards-container-content swiper-wrapper">
+                            <div class="product-card swiper-slide">
+                                <img src="images/agriculture/gensuke-green/gensuke-green.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">げんすけグリーン</h3>
+                                    <p class="product-info">土づくりを簡素化できる完熟の酵素堆肥</p>
+                                    <p class="product-price">¥2,750(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <img src="images/agriculture/gensuke-red/gensuke-red.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">げんすけレッド</h3>
+                                    <p class="product-info">肥効と地力をアップするペレットタイプの土壌改良材</p>
+                                    <p class="product-price">¥4,290(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <img src="images/agriculture/gensuke-attack/gensuke-attack.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">げんすけアタック</h3>
+                                    <p class="product-info">秀品率アップと増収のための基本づくり</p>
+                                    <p class="product-price">¥3,520(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <img src="images/agriculture/actif/actif.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">アクティーフ</h3>
+                                    <p class="product-info">肥効が遅くメタボになりがちなときに</p>
+                                    <p class="product-price">¥10,120(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <img src="images/agriculture/active-amino/active-amino.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">アクティブ・アミノ</h3>
+                                    <p class="product-info">光合成の働きで根張り・旨味をアップ</p>
+                                    <p class="product-price">¥20,460(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card swiper-slide">
+                                <img src="images/agriculture/zancer-gs/zancer-gs.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">ザンサーＧＳ</h3>
+                                    <p class="product-info">独自の微生物・ＧＳ菌バランスで健康な土に蘇らせる！</p>
+                                    <p class="product-price">¥17,600(税込)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <hr class="divider">
+                </div>
+                <div class="products-container">
+                    <div class="water-purification bg-img-container">
+                        <div class="overlay"></div>
+                        <h2 class="products-title">WATER PURIFICATION</h2>
+                        <P class="agriculture-short-info">to clean up the water quality</P>
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards-container-content">
+                            <div class="product-card">
+                                <img src="images/water-purification/Uetadron/uetadron.jpg" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">ウエタドロン</h3>
+                                    <p class="product-info">スカム、汚泥、悪臭を減少させる分解酵素</p>
+                                    <p class="product-price">¥20,460(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/water-purification/gensuke-clean/gensuke-clean.jpg" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">げんすけクリーン</h3>
+                                    <p class="product-info">水質、土壌浄化用</p>
+                                    <p class="product-price">¥33,000(税込)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-container">
+                    <div class="garbage bg-img-container">
+                        <div class="overlay"></div>
+                        <h2 class="products-title">GARBAGE</h2>
+                        <P class="agriculture-short-info">to decompse the garbage rapidly and eco friendly</P>
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards-container-content">
+                            <div class="product-card">
+                                <img src="images/garbage/bacterium Pacu/a03ab.jpg" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">ウエタドロン</h3>
+                                    <p class="product-info">スカム、汚泥、悪臭を減少させる分解酵素</p>
+                                    <p class="product-price">¥20,460(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/garbage/garbage-disposal/a11-1.jpg" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">生ゴミ処理用培地パクー</h3>
+                                    <p class="product-info">水質、土壌浄化用</p>
+                                    <p class="product-price">
+                                        20㍑ 30㍑ <br>
+                                        ¥1,980(税込) ～
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-container">
+                    <div class="gardening bg-img-container">
+                        <div class="overlay"></div>
+                        <h2 class="products-title">GARDENING</h2>
+                        <P class="agriculture-short-info">to vise beautiful flowers and veges</P>
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards-container-content">
+                            <div class="product-card">
+                                <img src="images/gardening/vegetable-product/vegetable-supplement.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">野菜元気サプリ</h3>
+                                    <p class="product-info">ベランダ—農業女子</p>
+                                    <p class="product-price">¥990(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/gardening/vegetable-product/vegetable-shower.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">野菜元気シャワー</h3>
+                                    <p class="product-info">​ベランダ—農業女子</p>
+                                    <p class="product-price">¥1,320(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/gardening/rose-product/rose-supplemnet.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">バラ元気サプリ</h3>
+                                    <p class="product-info">​プロのバラ女子</p>
+                                    <p class="product-price">¥1,870(税込)</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/gardening/rose-product/rose-shower.png" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">バラ元気シャワー</h3>
+                                    <p class="product-info">​プロのバラ女子</p>
+                                    <p class="product-price">¥1,430(税込)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-container">
+                    <div class="home bg-img-container">
+                        <div class="overlay"></div>
+                        <h2 class="products-title">HOME</h2>
+                        <P class="agriculture-short-info">to stay healthy</P>
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards-container-content">
+                            <div class="product-card">
+                                <img src="images/home/pets-product/bio-shower.jpg" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">ビオシャワー</h3>
+                                    <p class="product-info">ペット用酵素ミスト</p>
+                                    <p class="product-price">¥2,200(税込) ～</p>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/home/laundry/laundry-enzyme.jpg" alt="">
+                                <div class="product-card-info">
+                                    <h3 class="product-card-title">お洗濯酵素</h3>
+                                    <p class="product-info">消臭･柔軟･除菌液</p>
+                                    <p class="product-price">¥957(税込)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <!-- Swipper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- javaScrip -->
+    <script src="js/script.js"></script>
 </body>
 </html>

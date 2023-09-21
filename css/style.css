@@ -12,11 +12,6 @@ body {
     line-height: 1.6;
 }
 
-h1{
-    color: red;
-}
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -26,7 +21,7 @@ hr{
     border-bottom: 1.5px solid black;
 }
 
-.gensuke-logo{
+.product-logo{
     height: 100px;
 }
 
@@ -34,16 +29,6 @@ hr{
     border: 1px solid rgb(169, 168, 168);
     padding: 10px;
     border-radius: 15px;
-}
-
-.gensuke-red-img{
-    width: 40px;
-    margin-right: 0.4rem;
-}
-
-.product-name{
-    font-weight: 900;
-    font-size: 2.6rem;
 }
 
 
@@ -56,14 +41,11 @@ header{
 }
 
 nav {
-    display: flex;
-    align-items: center;
     text-align: center;
 }
 
 .navbar{
     position: fixed;
-    /* background-color: transparent; */
     top: 0;
     right: 0;
     width: 250px;
@@ -75,9 +57,9 @@ nav {
 
 .navbar:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    background-color: white;
     border: 0.5px solid gray;
-    transition: box-shadow .6s;
-    
+    transition: box-shadow .6s    
 }
 
 .navbar:hover .open-book-icon{
@@ -95,7 +77,7 @@ nav {
 }
 
 .open-book-icon{
-    width: 35px;
+    width: 40px;
 }
 
 .navbar-menu{
@@ -104,8 +86,6 @@ nav {
 
 .sidebar-menu{
     list-style: none;
-    text-transform: uppercase;
-    background-color: transparent;
 }
 
 .menu-icon{
@@ -144,7 +124,6 @@ nav {
 main {
     padding:5vh 7%;
     margin: 0 auto;
-    background-color: transparent;
     padding: 20px;
     max-width: 930px;
 }
@@ -223,9 +202,7 @@ main {
     display: none;
 }
 
-
 .product-details{
-    align-items: center;
     width: 100%;
     padding: 0 2%
 }
@@ -236,7 +213,6 @@ main {
     width: 50px;
     border-radius: 50%;
     border: 2px solid green;
-    margin: 0;
     position: absolute;
 }
 
@@ -254,10 +230,21 @@ main {
     margin-right: 5px;
 }
 
-.product-title{
-    font-size: 2rem;
-    margin-top: 10px;
-    font-weight: 500;
+.gensuke-red-title{
+    color: red;
+}
+
+.gensuke-attack-title{
+    color: #F18D00;
+}
+
+.gensuke-green-title{
+    color: green;
+}
+
+.title{
+    font-size: 2.1rem;
+    font-weight: 600;
 }
 
 .product-price span{
@@ -269,12 +256,12 @@ main {
     align-items: center;
     margin-top: 10px;
 }
+
 .info-item a{
     color: black;
 }
 
 .amount-input{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 3px 5px;
     font-size: 1rem;
@@ -486,6 +473,8 @@ th, td {
 }
 
 .usecase-img-box{
+    background-color: rgb(241, 240, 241);
+    max-height: 316.6px;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -518,7 +507,14 @@ th, td {
     font-size: 0.8rem;
 }
 
-.related-products a{
+
+.related-product-img{
+    width: 130px;
+}
+
+.realted-product-container{
+    width: 130px;
+    overflow: hidden;
     color: black;
     border: 0.5px solid gray;
     margin-right: 15px;
@@ -526,18 +522,16 @@ th, td {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.related-products a:hover{
+.realted-product-container p{
+    color: black;
+    font-size: 0.7rem;
+}
+
+.realted-product-container:hover{
     background-color: white;
     transition: background-color .5s;
 }
 
-.related-product-img{
-    width: 130px;
-}
-
-.related-product-img p{
-    font-size: 0.7rem;
-}
 
 .feature-table td {
     border: none;
@@ -559,14 +553,23 @@ footer {
     z-index: 5; 
 }
 
+.gensuke-red-footer{
+    background-image: url(images/genuske-red-footer-img.JPG);
+}
+.gensuke-green-footer{
+    background-image: url(images/gensuke-green-footer-img.jpg);
+}
+.gensuke-attack-footer{
+    background-image: url(images/gensuke-attack-footer-img.JPG);
+}
+
 .footer-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;
-    background-image: url(images/footer_bg_large.jpg);
+    /* height: 90vh; */
     background-size: cover;
-    background-position: bottom left;
+    background-position: center;
     padding: 10vh 50px 50px 50px;
     text-align: center;
 }
@@ -577,32 +580,11 @@ footer {
 
 .footer-content{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax( 240px, 1fr));
     gap: 20px;
     text-align: left;
-}
-
-.ueta-payments{
-    border: 0.5px solid black;
-    border-radius: 30px;
-    padding: 20px 30px;
-    backdrop-filter: blur(1.5px);
-}
-
-.about-ueta{
-    font-size: 0.8rem;
-}
-
-.gensuke-red{
-    width: 50px;
-    margin-right: 7px;
-}
-
-.ueta-title{
-    font-size: 2.8rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #E50113;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .flex-container{
@@ -610,24 +592,6 @@ footer {
     align-items: baseline;
 }
 
-.payments-title{
-    margin: 20px 0 10px 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.payments-cards{
-    width: 80%;
-}
-
-.payments-card{
-    height: 40px;
-    padding: 3px;
-    background-color: #F9FCFD;
-    border: 0.5px solid black;
-    border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-}
 
 .footer-title{
     margin: 30px 0 10px 0;
@@ -648,17 +612,17 @@ footer {
     
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 520px) {
     .open-book-icon{
         width: 20px;
     }
 
-    .navbar:hover .open-book-icon{
+    .open-book-icon:hover{
         width: 30px;
         transition: width 0.4s;
     }
 
-    .gensuke-logo{
+    .product-logo{
         height: 70px;
     }
     .product-image:last-child{
@@ -715,7 +679,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
     .gensuke-red{
         width: 40px;
     }
@@ -732,3 +695,5 @@ footer {
         flex-direction: column;
     }
 }
+
+/* 719 */
