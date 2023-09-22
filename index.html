@@ -21,8 +21,45 @@
             <a href=""><img class="company-logo-img" src="images/company/company-logo.png" alt=""></a>
             <ul class="navbar-menu">
                 <li class="navbar-menu-item"><a href="">HOME</a></li>
-                <li class="navbar-menu-item"><a href="">PRODUCTS<i class="fa-solid fa-angle-down"></i></a></li>
-                <li class="navbar-menu-item"><a href="">CONTACT<i class="fa-solid fa-angle-down"></i></a></li>
+                <li class="navbar-menu-item">
+                    <a href="">PRODUCTS<i class="fa-solid fa-angle-down "></i></a>
+                    <div class="sub-menu">
+                        <div class="">
+                            <p class="sub-menu-title">General Merchandise</p>
+                            <hr class="divider">
+                            <ul class="nav-sub-menu">
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/flower.png" alt="">Gardening Supplies</a></li>
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/pet.png" alt="">Pets Supplies</a></li>
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/laundry.png" alt="">Laundry Supplies</a></li>
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/sheelds.png" alt="">Safety</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p class="sub-menu-title">Good For Bussiness</p>
+                            <hr class="divider">
+                            <ul class="nav-sub-menu">
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/wheate.png" alt="">Aggriculture</a></li>
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/water.png" alt="">Water Puricfication</a></li>
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/backet.png" alt="">Garbage Disposal</a></li>
+                                <li class="nav-sub-menu-item"><a class="nav-sub-menu-link" href=""><img class="nav-sub-menu-icon" src="icons/sheelds.png" alt="">Safety</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="navbar-menu-item">
+                    <a href="">CONTACT<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="sub-menu">
+                        <div class="">
+                            <p class="sub-menu-title">Contact Us</p>
+                            <hr class="divider">
+                            <ul class="nav-sub-menu">
+                                <li class="nav-sub-menu-item" ><a class="nav-sub-menu-link" href=""><i class="fa-brands fa-square-facebook navbar-icon"></i>facebook</a></li>
+                                <li class="nav-sub-menu-item" ><a class="nav-sub-menu-link" href=""><i class="fa-brands fa-instagram navbar-icon"></i>Instagram</a></li>
+                                <li class="nav-sub-menu-item" ><a class="nav-sub-menu-link" href=""><i class="fa-regular fa-envelope navbar-icon"></i>Mail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
                 <li class="navbar-menu-item"><a href="">ABOUT</a></li>
             </ul>
         </nav>
@@ -39,7 +76,20 @@
                     </div>
                 </div>
                 <div class="hero-img-container">
-                    <img class="hero-img" src="images/company/emma-valerio-acdcAUKeA5A-unsplash.jpg" alt="">
+                    <div class="swiper hero-images">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img1.JPG" alt=""></div>
+                          <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img2.JPG" alt=""></div>
+                          <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img3.JPG" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="autoplay-progress">
+                          <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                          </svg>
+                          <span></span>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
@@ -292,6 +342,11 @@
             </div>
         </section>
     </main>
+    <footer>
+
+        <p>Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
+    </footer>
+    
     <!-- Swipper -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- javaScrip -->
