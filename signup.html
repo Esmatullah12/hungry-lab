@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex-container signup-container">
+        <div class="signup-form-container">
+            <h2 class="create-title">Create Account</h2>
+            <form class="signup-form" action="">
+                <div class="signup-form-step1">
+                    <label for="desired-id">Username</label>
+                    <input required type="text" name="desired-id" placeholder="半角英数 （4～20文字）">
+                    <label for="name">Name</label>
+                    <input required type="text" name="name" placeholder="例：買物　太郎">
+                    <label for="furigana">Furigana</label>
+                    <input required type="text" name="furigana" placeholder="(例：03-1234-5678)">
+                    <label for="address">Address</label>
+                    <div class="post-code-province">
+                        <input class="post-code" required type="text" name="address">
+                        <input class="post-code" required type="text" name="postal-code">
+                        <select class="province-menu" id="provinces">
+                            <option value="北海道">北海道</option>
+                            <option value="青森県">青森県</option>
+                            <option value="岩手県">岩手県</option>
+                            <option value="宮城県">宮城県</option>
+                        </select>
+                        <a href="" download=""><button class="post-codes-btn">Postal codes</button></a>
+                    </div>
+                    <input type="text" placeholder="住所１">
+                    <label for="">(市区町村)</label>
+                    <input type="text" placeholder="住所２">
+                    <div class="step1-btns">
+                        <a class="login-page-link" href="login.html"><i class="fa-solid fa-angle-left"></i> Login</a>
+                        <button id="form-next-btn" class="step1-next-btn" >Next</button>
+                    </div>
+                </div>
+                <div class="signup-form-step2">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" placeholder="example@gmail.com">
+                    <br>
+                    <label for="password">Password</label>
+                    <input required type="text" name="password" placeholder="">
+                    <br>
+                    <label for="name">Re-type Password</label>
+                    <input required type="text" name="password" placeholder="">
+                    <br>
+                    <button class="signup-btn" type="submit"><a class="signup-link" href="index.html">Signup</a></button>    
+                </div>
+            </form>
+            <img class="signup-img" src="images/company/signup-img.png" alt="">
+        </div>
+    </div>
+    <script src="js/script.js">
+        
+    </script>
+</body>
+</html>

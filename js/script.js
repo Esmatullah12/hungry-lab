@@ -6,19 +6,56 @@ const popupImage = document.querySelector(".popup-content")
 const closePopupBtn = document.querySelector('.close-popup')
 const popupBackground = document.querySelector(".overlay")
 
-var swiper = new Swiper('.swiper', {
-    slidesPerView: 4.8,
-    direction: getDirection(),
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+
+
+document.addEventListener("DOMContentLoaded", () =>{
+  const nextBtnForm = document.getElementById('form-next-btn')
+  const fromStep1 = document.querySelector('.signup-form-step1')
+  const fromStep2 = document.querySelector('.signup-form-step2')
+  nextBtnForm.addEventListener("click", (event) =>{
+    event.preventDefault()
+    fromStep1.style.display = "none"
+    fromStep2.style.display = "block"
+  })
+})
+
+
+
+
+const productPage = (pageName) =>{
+  window.open(`/Users/SilkRoad/Desktop/Ordinary Repo/hungry-lab copy/${pageName}`, '_blank')
+}
+
+var swiper = new Swiper('.cards-container', {
+  slidesPerView: 4,
+  direction: getDirection(),
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
     },
-    on: {
-      resize: function () {
-        swiper.changeDirection(getDirection());
-      },
-    },
-  });
+  },
+});
+
+var swiper = new Swiper(".feature-container", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 function getDirection() {
     var windowWidth = window.innerWidth;
@@ -28,29 +65,30 @@ function getDirection() {
 }
 
 const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
-    var swiper = new Swiper(".hero-images", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-        }
-      }
-    });
+const progressContent = document.querySelector(".autoplay-progress span");
+
+var swiper = new Swiper(".hero-images", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    }
+  }
+});
 
 productImages.forEach(productImage => {
     productImage.addEventListener('click', (event) =>{
@@ -77,9 +115,6 @@ closePopupBtn.addEventListener('click', () =>{
     imagePopupContainer.style.display = "none"
     popupBackground.style.display = "none"
 })
-
-
-
 
 
 

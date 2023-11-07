@@ -1,4 +1,4 @@
-*, ::before, ::after{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -121,11 +121,15 @@ nav {
     width: 30px;
 }
 
+.container{
+    max-width: 930px;
+    margin: 0 auto;
+}
+
 main {
     padding:5vh 7%;
     margin: 0 auto;
     padding: 20px;
-    max-width: 930px;
 }
 
 .product-container{
@@ -391,106 +395,123 @@ th, td {
     font-size: 0.8rem;
 }
 
-
-
-
-.product-fearures{
-    border: 1px solid black;
-    padding: 2% 0;
-    margin: 20px 0;
-    position: relative;
-    z-index: 3;
-
-}
-
-.features-label{
-    background-color: #1f4068;
-    color: #fff;
-    display: inline;
-    position: absolute;
-    left: 0;
-    padding: 10px 30px;
-    border-radius: 0 10px 10px 0;
-    font-weight: bold;
-}
 .feature-container{
-    padding: 2%;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    justify-items: center;
-    row-gap: 30px;
+    margin: 20px 0;
+    height: 340px;
+    position: relative;
+    color: white;
 }
 
-.feature-info ul{
-    margin-bottom: 0;
-}
-
-.usecase-container{
-    padding:2% 5%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 0.8rem;
-}
-
-.usecase-img-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    align-items: center;
-    gap: 10px;
-}
-
-.usecase-img-container img{
-    width: 100%;
-}
-
-.use-container{
-    margin-top: 40px;
-    padding: 2% 5%;
-    font-size: 0.8rem;
-}
-
-
-
-.feature-container:last-child{
-    display: block;
-    margin-top: 60px;
+.feature-info{
+    background-image: url(../images/agriculture/gensuke-red/tomato.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 3%;
 }
 
 .feature-list{
     list-style-position: inside;
+    z-index: 1;
 }
 
-.product-fearures h3{
-    font-weight: bold;
-    margin-top: 20px;
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.feature-img-box{
+.usecase-container-title{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.usecase-img-container{
+    color: white;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
-.usecase-img-box{
-    background-color: rgb(241, 240, 241);
-    max-height: 316.6px;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    padding: 5%;
-    border: 0.5px solid black;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-}
-
-.feature-img{
-    
+.usecase-box{
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
     width: 100%;
-    border: 0.5px solid black;
-    padding: 3%;
-    border-radius: 13px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-position: bottom;
+    background-size: cover;
+}
 
+.usecase-text{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.first-img-box{    
+    background-image: url(../images/agriculture/gensuke-red/cucumber1.jpg);
+}
+
+.second-img-box{
+    background-image: url(../images/agriculture/gensuke-red/corn.jpg);
+}
+
+.third-img-box{
+    background-image: url(../images/agriculture/gensuke-red/onion.jpg);
+}
+
+.usecase-box:first-child{
+    border-right: 1px solid black;
+}
+
+.usecase-box:last-child{
+    border-left: 1px solid black;
+}
+
+.usage-container {
+    color: black;
+    padding: 3%;
+    background-color: #D8D9DA;
+}
+
+.feature-table{
+    font-size: 1rem;
+}
+
+.usage-table{
+    list-style-position: inside;
+}
+
+.feature-table td {
+    border: none;
+    border-top: 0.5px solid black;;
+}
+
+.video-link{
+    display: flex;
+    gap: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 20px auto 0 auto;
+    color: black;
+}
+
+.video-link:hover{
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.product-video-icon{
+    width: 40px;
 }
 
 .related-product-title{
@@ -540,34 +561,32 @@ th, td {
 
 footer {
     height: 100vh;
+    color: white;
 }   
 
 .back-top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background-color: #7C9D96;
     color: #000;
     position: fixed;
     bottom: 5%;
     right: 5%;
     border: none;
-    padding: 7px 15px;
-    z-index: 5; 
-}
-
-.gensuke-red-footer{
-    background-image: url(images/genuske-red-footer-img.JPG);
-}
-.gensuke-green-footer{
-    background-image: url(images/gensuke-green-footer-img.jpg);
-}
-.gensuke-attack-footer{
-    background-image: url(images/gensuke-attack-footer-img.JPG);
+    z-index: 5;
+    font-size: 1.5rem;
 }
 
 .footer-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 90vh; */
+    height: 90vh;
+    background-image: url(../images/jp-mountian.jpg);
     background-size: cover;
     background-position: center;
     padding: 10vh 50px 50px 50px;
@@ -601,7 +620,7 @@ footer {
 
 .fotter-link{
     display: block;
-    color: black;
+    color: white;
     font-weight: 400;
     transition: transform .3s;
 }
@@ -648,7 +667,7 @@ footer {
     }
 
     .feature-container{
-        border: 1px red;
+        margin: 20px 0;
         height: 100vh;
         font-size: 0.9rem;
         padding: 0 5%;
@@ -663,7 +682,6 @@ footer {
     }
 
     .footer-container{
-        background-image: url(images/footer_bg_small.jpg);
         background-size: cover;
         padding: 20px;
         top: 0;
@@ -697,3 +715,207 @@ footer {
 }
 
 /* 719 */
+
+.flex-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container, .signup-container{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 900px;
+    height: 80vh;
+    overflow: hidden;
+    border: 0.5px solid gray;
+    background-color: white;
+}
+
+.signup-container{
+    height: fit-content;
+    max-width: 1000px;
+    width: 80%;
+}
+
+.signup-form-step1 input{
+    display: block;
+    border: 1px solid black;
+}
+
+.form-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+}
+
+.form input, .signup-form input,  .login-btn {
+    font-size: 1rem;
+    width: 100%;
+    padding: 7px 12px;
+    border: none;
+    border: 0.5px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin: 0px 0 10px 0;
+}
+
+.signup-form {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    width: 50%;
+    gap: 40px;
+    padding: 0;
+    height: 100%;
+    transition: right 0.5s ease-in-out;
+}
+
+.login-btn{
+    border: 1px solid black;
+    margin-top: 10px ;
+    background-color: black;
+    cursor: pointer;
+}
+
+.login-btn a{
+    color: white;
+}
+
+
+
+.form input:focus{
+    outline: 2px solid #AED2FF;
+    border-radius: 3px;
+}
+
+.form-container-img{
+    width: 50%;
+}
+
+.signup-form-container{
+    border: 0.5px solid black;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    padding: 20px;
+}
+
+.create-title{
+    margin-bottom: 20px;
+}
+
+.signup-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post-code-province{
+    display: flex;
+    gap: 10px;
+}
+
+.post-codes-btn{
+    border: 0.5px solid rgb(1, 111, 254);
+    padding: 6px 0px;
+    height: 39px;
+    width: 100px;
+    background-color: rgb(181, 208, 209);
+    font-weight: 500;
+}
+
+.province-menu{
+    border: 0.5px solid gray;
+    padding: 0 12px;
+    height: 39px;
+}
+
+.signup-form-step1{
+    width: 100%;
+    padding-right: 40px;
+}
+
+.signup-form-step2{
+    width: 100%;
+    height: fit-content;
+    display: none;
+    padding-right: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup-img{
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.step1-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-page-link{
+    color: black;
+    font-size: 1rem;
+    padding: 6px 20px;
+    box-sizing: border-box;
+    border: .5px solid white;
+}
+
+.login-page-link:hover{
+    border: .5px solid black;
+    transition: border-color 1s;
+}
+
+.step1-next-btn{
+    background-color: transparent;
+    padding: 6px 30px;
+    border: 0.5px solid black;
+    font-size: 1rem;
+}
+
+.step1-next-btn:hover{
+    background-color: black;
+    transition: background-color 0.5s, color 0.5s;
+    color: white;
+}
+
+.signup-btn{
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    padding: 6px 12px;
+    border: 0.5px solid black;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-page-signup-btn{
+    background-color: white;
+    color: black;
+}
+
+.signup-link{
+    text-decoration: none;
+    color: white;
+}

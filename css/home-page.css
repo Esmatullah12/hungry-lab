@@ -130,6 +130,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
+    gap: 3rem;
 }
 
 .swiper {
@@ -140,11 +141,6 @@ body {
 
 .hero-images{
     background-color: transparent;
-}
-
-.hero-img{
-    border-radius: 20px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
 }
 
 .swiper-slide{
@@ -204,6 +200,8 @@ body {
 
 .hero-short-text{
     margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 .sologan{
@@ -214,7 +212,10 @@ body {
 }
 .hero-img-container{
     width: 50%;
+}
 
+.hero-img{
+    border-radius: 10px;
 }
 
 .btn{
@@ -296,30 +297,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 35vh;
     position: relative;
     color: white;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .agriculture{
-    background-image: url(../images/agriculture/agriculture2.jpg);
+    background-image: url(../images/agriculture/agriculture.jpg);
 }
 
 .water-purification{
-    background-image: url(../images/water-purification/water2.jpg);
+    background-image: url(../images/water-purification/water.jpg);
 }
 
 .garbage{
-    background-image: url(../images/garbage/garbage2.jpg);
+    background-image: url(../images/garbage/garbage.jpg);
 }
 
 .gardening{
-    background-image: url(../images/gardening/gardening4.jpg);
+    background-image: url(../images/gardening/gardening.jpg);
 }
 
 .home{
-    background-image: url(../images/home/home2.jpg);
+    background-image: url(../images/home/home.jpg);
 }
 
 .overlay{
@@ -343,11 +344,16 @@ body {
     z-index: 1;
 }
 
+.cards-container{
+    padding: 1.4rem 0;
+}
+
+
 .cards-container-content{
     display: flex;
-    align-items: center;
+    margin-bottom: 0 auto  auto;
+    width: 100%;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
 .product-card {
@@ -355,15 +361,21 @@ body {
     margin: 10px 30px;
     flex: 0 0 25%;
     max-width: 20%;
-    border: 1px solid #ccc;
-    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0.5px solid gray;
+    background-color: #E4E4E4;
+    border-radius: 7px;
 }
   
 .product-card-info{
     padding: 10px 20px;
-    background-color: rgb(206, 205, 205);
+    background-color: #9BABB8;
+    border-top: 1px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  
 .product-card img {
@@ -392,3 +404,90 @@ body {
     transform: scale(1.02);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+footer{
+    background-image: url(../images/jp-mountian.jpg);
+    background-size: cover;
+    background-position: top;
+    border-top: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container-form{
+    width: 400px;
+}
+
+.location-container{
+    width: fit-content;
+}
+
+.location{
+    background-color: white;
+    padding: 8px;
+    border: 1px solid white;
+    width: fit-content;
+}
+
+.location-text,
+.contact-text{
+    font-size: 1.2rem;
+}
+
+.location-link{
+    border: solid black;
+}
+
+.contact-container{
+    text-align: left;
+    margin: 40px auto;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.contact-input{
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    color: white;
+}
+
+.contact-input::placeholder{
+    color: white;
+}
+
+.contact-input:focus{
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    height: 190px;
+}
+
+.contact-btn{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 7px 20px;
+}
+
+.contact-btn:hover{
+    backdrop-filter: blur(3px);
+    transition: backdrop-filter 0.5s;
+}
+
+/* slide */
