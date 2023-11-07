@@ -914,3 +914,8 @@ footer {
     background-color: white;
     color: black;
 }
+
+.signup-link{
+    text-decoration: none;
+    color: white;
+}
