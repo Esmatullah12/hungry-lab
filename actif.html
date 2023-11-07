@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -103,10 +107,9 @@
             </table>
             
         </div>  
-        <div class="product-fearures">
-            <div class="features-label">特徴＆効果</div>
-            <div class="feature-container">
-                <div class="feature-info">
+        <div class="swiper container feature-container">
+            <div class="swiper-wrapper">
+                <div class="feature-info swiper-slide" style="background-image: url(images/agriculture/actif/actif-features.jpeg);">
                     <h3>過剰な肥料を分解し、肥料の吸収を活発に</h3>
                     <ul class="feature-list">
                         <li>肥料分解が促進され吸収が活発になる</li>
@@ -122,55 +125,58 @@
                         <li>配水管やエバフロー(光を通さない物)の目詰まりの改善と防止</li>
                     </ul>
                 </div>
-                <div class="feature-img-box">
-                    <img class="feature-img" src="images/agriculture/actif/actif-features.jpeg" alt="">
-                </div>
-                
-            </div>
-            <div class="features-label">使用例</div>
-            <div class="usecase-container">
-                <h3>きゅうり 生育途中での使用例</h3>
-                <div class="usecase-img-container">
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/actif/actif-uscase-before.jpeg" alt="">
-                        定植時に「げんすけアタック」を定量使用し、マルチ前に5袋/10a使用。
-                    </div>
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/actif/actif-usecase-after.jpeg" alt="">
-                        毛細根活性と共に炭酸ガスも発生させ、成り疲れを軽減させます！
-                    </div>
-                    <div class="usecase-img-box">
-                        <h3>★ 稲　苗への使用例</h3>
-                        <img src="images/agriculture/actif/actif-usecase-rice.jpeg" alt="">
+                <div class="swiper-slide">
+                    <h3 class="usecase-container-title">きゅうり 生育途中での使用例</h3>
+                    <div class="usecase-img-container">
+                        <div class="usecase-box" style="background-image: url(images/agriculture/actif/actif-uscase-before.jpeg);">
+                            <p class="usecase-text">定植時に「げんすけアタック」を定量使用し、マルチ前に5袋/10a使用。</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="usecase-box" style="background-image: url(images/agriculture/actif/actif-usecase-after.jpeg);">
+                            <p class="usecase-text">毛細根活性と共に炭酸ガスも発生させ、成り疲れを軽減させます！</p>    
+                        </div>
                     </div>
                 </div>
-                
+                <div class="swiper-slide">
+                    <h3 class="usecase-container-title">★ 稲　苗への使用例</h3>
+                    <div class="usecase-img-container">
+                        <div class="usecase-box" style="background-image: url(images/agriculture/actif/actif-usecase-rice.jpeg);">
+                            <p class="usecase-text">★ 稲　苗への使用例</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="usage-container swiper-slide">
+                    <h3>アクティーフは冠水パイプ、点滴チューブ、<br>
+                        葉面散布、マルチに使える酵素剤です。</h3>
+                    <table class="feature-table">
+                        <tbody>
+                            <tr>
+                                <td>           
+                                    アクティーフ<br>
+                                    使用量の目安<br>
+                                    （10Rあたり）<br>
+                                </td>
+                                <td>
+                                    <ul class="usage-table">
+                                        <li>土作り / 20ℓを水田時に使用してください。</li>
+                                        <li> 定植時 / 300倍程度を使用して下さい。</li>
+                                        <li> 生育時期 / 3〜5ℓを潅水にて、液肥などと一緒ご使用ください。</li>
+                                        <li>外部的障害時(大風・大雨) / 20ℓを葉面散布、潅水でご使用ください。</li>
+                                        <li>※ 上記使用量は目安です。作物や施肥量により異なります。</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="video-link" href="">
+                        <img class="product-video-icon" src="icons/video.png" alt="">
+                        <p>もっと詳しい使用例はこちら</p>
+                    </a>
+                </div>
             </div>
-            <div class="features-label">使い方</div>
-            <div class="use-container">
-                <h3>アクティーフは冠水パイプ、点滴チューブ、<br>
-                    葉面散布、マルチに使える酵素剤です。</h3>
-                <table class="feature-table">
-                    <tbody>
-                        <tr>
-                            <td>           
-                                アクティーフ<br>
-                                使用量の目安<br>
-                                （10Rあたり）<br>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>土作り / 20ℓを水田時に使用してください。</li>
-                                    <li> 定植時 / 300倍程度を使用して下さい。</li>
-                                    <li> 生育時期 / 3〜5ℓを潅水にて、液肥などと一緒ご使用ください。</li>
-                                    <li>外部的障害時(大風・大雨) / 20ℓを葉面散布、潅水でご使用ください。</li>
-                                    <li>※ 上記使用量は目安です。作物や施肥量により異なります。</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="related-product">
             <p class="related-product-title">関連商品</p>
@@ -186,7 +192,7 @@
                 </div>
             </div>
         </div>
-        <a class="back-top-btn" href="#header">トップに戻る</a>
+        <a class="back-top-btn" href="#header"><i class="fa-solid fa-angle-up"></i></a>
     </main>
     <footer class="footer-container gensuke-attack-footer">
         <div class="footer-content">
@@ -227,6 +233,9 @@
         </div>
         <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- swipper javascript -->
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <!-- javascript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

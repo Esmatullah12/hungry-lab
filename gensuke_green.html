@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +23,7 @@
             <button class="menu-btn"><img class="open-book-icon" src="icons/open-book.png" alt=""><br><span>Menu</span></button><br>
             <div class="navbar-menu">
                 <ul class="sidebar-menu">
-                    <li class="menu-item">Home</li>
+                    <li class="menu-item">a</li>
                     <li class="menu-item">Products</li>
                     <li class="menu-item">Cart</li>
                     <li class="menu-item">Contact</li>
@@ -84,7 +88,7 @@
             <table>
                 <tr>
                     <th>内容量</th>
-                    <td style="width: 12*1%;">40リットル</td>
+                    <td>40リットル</td>
                 </tr>
                 <tr>
                     <th>内容成分</th>
@@ -97,10 +101,9 @@
                 </tr>
             </table>
         </div>  
-        <div class="product-fearures">
-            <div class="features-label">特徴＆効果</div>
-            <div class="feature-container">
-                <div class="feature-info">
+        <div class="swiper container feature-container">
+            <div class="swiper-wrapper">
+                <div class="feature-info swiper-slide" style="background-image: url(images/agriculture/gensuke-green/feature-img.jpg);">
                     <h3>少ない堆肥で水はけの良いふかふかな土に</h3>
                     <ul class="feature-list">
                         <li>土づくりの簡素化・省労化</li>
@@ -111,58 +114,57 @@
                         <li>植物が長持ちする</li>
                     </ul>
                 </div>
-                <div class="feature-img-box">
-                    <img class="feature-img" src="images/agriculture/gensuke-green/gensuke-green-features.jpg" alt="">
-                </div>
-                
-            </div>
-            <div class="features-label">使用例</div>
-            <div class="usecase-container">
-                <h3>★ マルチ前の畝上　表層散布も可能！</h3>
-                <div class="usecase-img-container">
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-green/gensuke-green-use-case-before.jpg" alt="">
-                        マルチをする前に10a/20袋程度を表層散布。
-                    </div>
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-green/gensuke-green-use-case-after.jpg" alt="">
-                        水がかかることによりGS菌群活性、有機物分解が進み、炭酸ガス濃度は朝方3,200PPMまで上昇。蒸散が促進されたためか、翌日には葉が少し上がりました。
+                <div class="swiper-slide">
+                    <h3 class="usecase-container-title">★ マルチ前の畝上　表層散布も可能！</h3>
+                    <div class="usecase-img-container">
+                        <div class="usecase-box" style="background-image: url(images/agriculture/gensuke-green/gensuke-green-use-case-before.jpg); background-size: cover;">
+                            <p class="usecase-text">マルチをする前に10a/20袋程度を表層散布。</p>
+                        </div>
+                        <div class="usecase-box" style="background-image: url(images/agriculture/gensuke-green/gensuke-green-use-case-after.jpg);">
+                            <p class="usecase-text">水がかかることによりGS菌群活性、有機物分解が進み、炭酸ガス濃度は朝方3,200PPMまで上昇。蒸散が促進されたためか、翌日には葉が少し上がりました。</p>
+                        </div>
                     </div>
                 </div>
+                <div class="usage-container swiper-slide">
+                    <h3>定植前に土に混ぜ込んでください。<br>
+                        種まき後の被覆としても使用することができます。</h3>
+                        <table class="feature-table">
+                            <tbody>
+                                <tr>
+                                    <td>使用量の<br>目安</td>
+                                    <td>
+                                        <ul class="usage-table">
+                                            <li>高木 / 5kg〜15kg ● 中木 / 3kg〜10kg ● 低木 / 1kg〜2kg</li>
+                                            <li>花壇 / 3kg〜10kg ● プランター / 2kg ● ポット苗 / 30g〜50g</li>
+                                            <li>10号鉢 / 1.5kg  ● 7号鉢 / 0.7kg</li>
+                                            <li>ハウス・路地（10Rあたり）　多肥作物 70〜100袋 / 少肥作物 30袋〜50袋
+                                                ※上記の使用量は目安です。多く使用しても害はありません。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>効果的な <br>
+                                        使用法方
+                                    </td>
+                                    <td>
+                                        <ul class="usage-table">
+                                            <li>当社商品げんすけレッドとの併用で、より効果的に土の団粒を形成します。</li>
+                                            <li> 植物性や動物性の堆肥との併用も効果的です。 </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                        <a class="video-link" href="">
+                            <img class="product-video-icon" src="icons/video.png" alt="">
+                            <p>もっと詳しい使用例はこちら</p>
+                        </a>
+                </div>
             </div>
-            <div class="features-label">使い方</div>
-            <div class="use-container">
-                <h3>定植前に土に混ぜ込んでください。<br>
-                    種まき後の被覆としても使用することができます。</h3>
-                    <table class="feature-table">
-                        <tbody>
-                            <tr>
-                                <td>使用量の<br>目安</td>
-                                <td>
-                                    <ul>
-                                        <li>高木 / 5kg〜15kg ● 中木 / 3kg〜10kg ● 低木 / 1kg〜2kg</li>
-                                        <li>花壇 / 3kg〜10kg ● プランター / 2kg ● ポット苗 / 30g〜50g</li>
-                                        <li>10号鉢 / 1.5kg  ● 7号鉢 / 0.7kg</li>
-                                        <li>ハウス・路地（10Rあたり）　多肥作物 70〜100袋 / 少肥作物 30袋〜50袋
-                                            ※上記の使用量は目安です。多く使用しても害はありません。</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>効果的な <br>
-                                    使用法方
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>当社商品げんすけレッドとの併用で、より効果的に土の団粒を形成します。</li>
-                                        <li> 植物性や動物性の堆肥との併用も効果的です。 </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr></tr>
-                        </tbody>
-                    </table>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="related-product">
             <p class="related-product-title">関連商品</p>
@@ -175,9 +177,10 @@
                 </div>
             </div>
         </div>
-        <a class="back-top-btn" href="#header">トップに戻る</a>
+
+        <a class="back-top-btn" href="#header"><i class="fa-solid fa-angle-up"></i></a>
     </main>
-    <footer class="footer-container gensuke-green-footer">
+    <footer class="footer-container">
         <div class="footer-content">
             <div class="products">
                 <h3 class="footer-title">PRODUCTS</h3>
@@ -216,6 +219,9 @@
         </div>
         <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- swipper javascript -->
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <!-- javascript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

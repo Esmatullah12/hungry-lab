@@ -68,19 +68,23 @@
         <section id="hero">
             <div class="flex-container container hero">
                 <div class="hero-text">
-                    <P class="sologan">Save the Earth</P>
-                    <p class="hero-short-text">Empowering a cleaner, greener world with natural products for planet and home hygiene.</p>
+                    <P class="sologan">理念</P>
+                    <p class="hero-short-text">
+                        微生物の働きを緑へと繋ぎ　緑の働きを食へと繋ぎ　
+                        微生物とまた出会い　流れる川や海となる　
+                        あなたの行動が自然そのものとなる　循環させるありがとう</p>
                     <div class="user-btns">
-                        <button class="login-btn btn">Login</button>
-                        <button class="signup-btn btn">Sign up</button>
+                        <a class="login-btn btn" href="login.html">Login</a>
+                        <a class="signup-btn btn" href="signup.html">Sign up</a>
                     </div>
                 </div>
                 <div class="hero-img-container">
                     <div class="swiper hero-images">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img1.JPG" alt=""></div>
-                          <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img2.JPG" alt=""></div>
                           <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img3.JPG" alt=""></div>
+                          <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img4.JPG" alt=""></div>
+                          <div class="swiper-slide"><img class="hero-img" src="images/company/hero-img5.JPG" alt=""></div>
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="autoplay-progress">
@@ -157,7 +161,7 @@
                         <P class="agriculture-short-info">to enrich the soil</P>
                     </div>
                     <div class="swiper cards-container">
-                        <div class="cards-container-content swiper-wrapper">
+                        <div onclick="productPage('gensuke_green.html')" class="cards-container-content swiper-wrapper">
                             <div class="product-card swiper-slide">
                                 <img src="images/agriculture/gensuke-green/gensuke-green.png" alt="">
                                 <div class="product-card-info">
@@ -166,15 +170,15 @@
                                     <p class="product-price">¥2,750(税込)</p>
                                 </div>
                             </div>
-                            <div class="product-card swiper-slide">
-                                <img src="images/agriculture/gensuke-red/gensuke-red.png" alt="">
+                            <div onclick="productPage('gensuke_red.html')" class="product-card swiper-slide">
+                                <img  src="images/agriculture/gensuke-red/gensuke-red.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">げんすけレッド</h3>
                                     <p class="product-info">肥効と地力をアップするペレットタイプの土壌改良材</p>
                                     <p class="product-price">¥4,290(税込)</p>
                                 </div>
                             </div>
-                            <div class="product-card swiper-slide">
+                            <div onclick="productPage('gensuke_attack.html')" class="product-card swiper-slide">
                                 <img src="images/agriculture/gensuke-attack/gensuke-attack.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">げんすけアタック</h3>
@@ -182,7 +186,7 @@
                                     <p class="product-price">¥3,520(税込)</p>
                                 </div>
                             </div>
-                            <div class="product-card swiper-slide">
+                            <div onclick="productPage('actif.html')" class="product-card swiper-slide">
                                 <img src="images/agriculture/actif/actif.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">アクティーフ</h3>
@@ -210,7 +214,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <hr class="divider">
+                    
                 </div>
                 <div class="products-container">
                     <div class="water-purification bg-img-container">
@@ -221,7 +225,7 @@
                     <div class="cards-container">
                         <div class="cards-container-content">
                             <div class="product-card">
-                                <img src="images/water-purification/Uetadron/uetadron.jpg" alt="">
+                                <img src="images/water-purification/Uetadron/uetadron.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">ウエタドロン</h3>
                                     <p class="product-info">スカム、汚泥、悪臭を減少させる分解酵素</p>
@@ -229,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="product-card">
-                                <img src="images/water-purification/gensuke-clean/gensuke-clean.jpg" alt="">
+                                <img src="images/water-purification/gensuke-clean/gensuke-clean.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">げんすけクリーン</h3>
                                     <p class="product-info">水質、土壌浄化用</p>
@@ -248,7 +252,7 @@
                     <div class="cards-container">
                         <div class="cards-container-content">
                             <div class="product-card">
-                                <img src="images/garbage/bacterium Pacu/a03ab.jpg" alt="">
+                                <img src="images/garbage/bacterium Pacu/bacterium-pacu2.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">ウエタドロン</h3>
                                     <p class="product-info">スカム、汚泥、悪臭を減少させる分解酵素</p>
@@ -256,7 +260,7 @@
                                 </div>
                             </div>
                             <div class="product-card">
-                                <img src="images/garbage/garbage-disposal/a11-1.jpg" alt="">
+                                <img src="images/garbage/garbage-disposal/garbage-disposal.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">生ゴミ処理用培地パクー</h3>
                                     <p class="product-info">水質、土壌浄化用</p>
@@ -321,7 +325,7 @@
                     <div class="cards-container">
                         <div class="cards-container-content">
                             <div class="product-card">
-                                <img src="images/home/pets-product/bio-shower.jpg" alt="">
+                                <img src="images/home/pets-product/bio-shower.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">ビオシャワー</h3>
                                     <p class="product-info">ペット用酵素ミスト</p>
@@ -329,7 +333,7 @@
                                 </div>
                             </div>
                             <div class="product-card">
-                                <img src="images/home/laundry/laundry-enzyme.jpg" alt="">
+                                <img src="images/home/laundry/laundry-enzyme.png" alt="">
                                 <div class="product-card-info">
                                     <h3 class="product-card-title">お洗濯酵素</h3>
                                     <p class="product-info">消臭･柔軟･除菌液</p>
@@ -343,10 +347,25 @@
         </section>
     </main>
     <footer>
-
+        <div class="flex-container contact-container">
+            <div class="contact-container-form">
+                <p class="contact-text">Contact us</p>
+                <form class="contact-form" action="">
+                    <input class="contact-input" type="text" name="" id="" placeholder="Enter your name">
+                    <input class="contact-input" type="email" placeholder="Enter Your Email Address">
+                    <textarea class="contact-input textarea" name="" id="" cols="30" rows="9" placeholder="Write your message here" ></textarea>
+                    <button class="contact-btn" type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="location-container">
+                <p class="location-text">Google Map Location</p>
+                <div class="location">
+                    <iframe class="location-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5163274257084!2d133.28741628120954!3d33.40978070483397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354e4959298a63d9%3A0xd831074c5e98a79c!2sUeta%20LABO!5e0!3m2!1sen!2s!4v1695396322289!5m2!1sen!2s" width="340" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
         <p>Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
-    
     <!-- Swipper -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- javaScrip -->

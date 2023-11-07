@@ -8,8 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- siper css -->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
 </head>
 <body>
     <header id="header">
@@ -19,7 +23,7 @@
                 <button class="menu-btn"><img class="open-book-icon" src="icons/open-book.png" alt=""><br><span>Menu</span></button><br>
                 <iv class="navbar-menu">
                     <ul class="sidebar-menu">
-                        <li class="menu-item">HOME</li>
+                        <li class="menu-item"><a href="index.html">Home</a></li>
                         <li class="menu-item">PRODUCTS</li>
                         <li class="menu-item">CART</li>
                         <li class="menu-item">CONTACT</li>
@@ -84,7 +88,7 @@
             <table>
                 <tr>
                     <th>内容量</th>
-                    <td style="width: 12*1%;">20リットル</td>
+                    <td >20リットル</td>
                 </tr>
                 <tr>
                     <th>内容成分/th>
@@ -96,10 +100,9 @@
                 </tr>
             </table>
         </div>  
-        <div class="product-fearures">
-            <div class="features-label">特徴＆効果</div>
-            <div class="feature-container">
-                <div class="feature-info">
+        <div class="swiper container feature-container">
+            <div class="swiper-wrapper">
+                <div class="feature-info swiper-slide">
                     <h3>少ない堆肥で水はけの良いふかふかな土に</h3>
                     <ul class="feature-list">
                         <li>肥効を高める</li>
@@ -108,43 +111,34 @@
                         <li>炭酸ガスの生成</li>
                         <li>EC・PH調整</li>
                         <li>病原菌に強くなる</li>
-                        <li>（根を保護するエンドファイトの働き</li>
+                        <li>根を保護するエンドファイトの働き</li>
                         <li>有機肥料・堆肥から発生する臭気・ガス・害虫の発生を抑える</li>
                     </ul>
                 </div>
-                <div class="feature-img-box">
-                    <img class="feature-img" src="images/agriculture/gensuke-red/gensuke-red-features.jpeg" alt="">
+                <div class="swiper-slide">
+                    <h3 class="usecase-container-title ">★ マルチ前の畝上　表層散布も可能！</h3>
+                    <div class="usecase-img-container">
+                        <div class="first-img-box usecase-box">
+                            <p class="usecase-text">キュウリ：１反あたり　10〜20袋</p>
+                        </div>
+                        <div class="second-img-box usecase-box">
+                            <p class="usecase-text">トウモロコシ：１反あたり　５袋</p>
+                        </div>
+                        <div class="third-img-box usecase-box">
+                            <p class="usecase-text">ネギ：１反あたり　3〜5袋</p>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
-                
-            </div>
-            <div class="features-label">使用例</div>
-            <div class="usecase-container">
-                <h3>★ マルチ前の畝上　表層散布も可能！</h3>
-                <div class="usecase-img-container">
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-red/gensuke-red-use-case-cucumber.jpeg" alt="">
-                        キュウリ：１反あたり　10〜20袋
-                    </div>
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-red/gensuke-red-use-case-corn.jpeg" alt="">
-                        トウモロコシ：１反あたり　５袋
-                    </div>
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-red/gensuke-red-use-case-green-onion.jpeg" alt="">
-                        ネギ：１反あたり　3〜5袋
-                    </div>
-                </div>
-            </div>
-            <div class="features-label">使い方</div>
-            <div class="use-container">
-                <h3>土作り、元肥時、追肥時にお使いください。<br>
-                    水分を与えることでGS菌群は動き始めます。</h3>
+                <div class="usage-container swiper-slide">
+                    <h3>土作り、元肥時、追肥時にお使いください。<br>
+                        水分を与えることでGS菌群は動き始めます。</h3>
                     <table class="feature-table">
                         <tbody>
                             <tr>
                                 <td>使用量の <br> 目安 <br>10Rあたり </td>
                                 <td>
-                                    <ul>
+                                    <ul class="usage-table">
                                         <li>土作り / 10袋〜15袋を土に混ぜこんでください</li>
                                         <li> 元肥・定植時 / 10袋を土に混ぜこむか土の上に撒いてください</li>
                                         <li>追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください</li>
@@ -158,7 +152,7 @@
                                     使用法方
                                 </td>
                                 <td>
-                                    <ul>
+                                    <ul class="usage-table">
                                         <li>当社商品げんすけグリーン（堆肥）・肥料・水との併用で、より効果的に土の団粒を形成します。</li>
                                         <li>当社商品アクティーフ（液体）と併用すると効果的に働きます。</li>
                                     </ul>
@@ -167,7 +161,15 @@
                             <tr></tr>
                         </tbody>
                     </table>
+                    <a class="video-link" href="">
+                        <img class="product-video-icon" src="icons/video.png" alt="">
+                        <p>もっと詳しい使用例はこちら</p>
+                    </a>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="related-product">
             <p class="related-product-title">関連商品</p>
@@ -180,9 +182,9 @@
                 </div>
             </div>
         </div>
-        <a class="back-top-btn" href="#header">トップに戻る</a>
+        <a class="back-top-btn" href="#header"><i class="fa-solid fa-angle-up"></i></a>
     </main>
-    <footer class="footer-container gensuke-red-footer">
+    <footer class="footer-container">
         <div class="footer-content">
             <div class="products">
                 <h3 class="footer-title">PRODUCTS</h3>
@@ -221,6 +223,9 @@
         </div>
         <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- swipper js -->
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
 </body>
 </html>

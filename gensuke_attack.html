@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fc7e7ce012.js" crossorigin="anonymous"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -90,12 +94,11 @@
                     <td>ポリ袋が破けるのでやさしく取り扱うこと。 冷暗所で保管。 雨や水にあてないようにしてください。</td>
                 </tr>
             </table>
-            
         </div>  
-        <div class="product-fearures">
-            <div class="features-label">特徴＆効果</div>
-            <div class="feature-container">
-                <div class="feature-info">
+        <div class="swiper container feature-container">
+            
+            <div class="swiper-wrapper">
+                <div class="feature-info swiper-slide" style="background-image: url(images/agriculture/gensuke-attack/gensuke-attack-features.jpeg);">
                     <h3>土壌成分のバランスを整え、作物を活性化</h3>
                     <ul class="feature-list">
                         <li>土壌の成分バランスの補充</li>
@@ -110,48 +113,47 @@
                         <li>有機肥料・堆肥から発生する臭気・ガス・害虫の発生を抑える</li>
                     </ul>
                 </div>
-                <div class="feature-img-box">
-                    <img class="feature-img" src="images/agriculture/gensuke-attack/gensuke-attack-features.jpeg" alt="">
-                </div>
-                
-            </div>
-            <div class="features-label">使用例</div>
-            <div class="usecase-container">
-                <h3>きゅうり 生育途中での使用例</h3>
-                <div class="usecase-img-container">
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-attack/gensuke-attack-use-case-before.jpeg" alt="">
-                        定植時に「げんすけアタック」を定量使用し、マルチ前に5袋/10a使用。
-                    </div>
-                    <div class="usecase-img-box">
-                        <img src="images/agriculture/gensuke-attack/gensuke-attack-use-case-after.jpeg" alt="">
-                        毛細根活性と共に炭酸ガスも発生させ、成り疲れを軽減させます！
+                <div class="swiper-slide">
+                    <h3 class="usecase-container-title">きゅうり 生育途中での使用例</h3>
+                    <div class="usecase-img-container">
+                        <div class="usecase-box" style="background-image: url(images/agriculture/gensuke-attack/gensuke-attack-use-case-before.jpeg);">
+                            <p class="usecase-text">定植時に「げんすけアタック」を定量使用し、マルチ前に5袋/10a使用。</p>
+                        </div>
+                        <div class="usecase-box" style="background-image: url(images/agriculture/gensuke-attack/gensuke-attack-use-case-after.jpeg);">
+                            <p class="usecase-text">毛細根活性と共に炭酸ガスも発生させ、成り疲れを軽減させます！</p>
+                        </div>
                     </div>
                 </div>
+                <div class="usage-container swiper-slide">
+                    <h3>土作り、元肥時、追肥時にお使いください。<br>
+                        水分を与えることでGS菌群は動き始めます。</h3>
+                    <table class="feature-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    使用量の目安<br>
+                                    （10Rあたり）</td>
+                                <td>
+                                    <ul>
+                                        <li>土作り / 15袋〜30袋を土に混ぜこんでください。</li>
+                                        <li> 元肥・定植時 / 15袋を土に混ぜこむか土の上に撒いてください。</li>
+                                        <li>追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください</li>
+                                        <li> 追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください。</li>
+                                        <li>※ 上記使用量は目安です。作物や施肥量により異なります。</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="video-link" href="">
+                        <img class="product-video-icon" src="icons/video.png" alt="">
+                        <p>もっと詳しい使用例はこちら</p>
+                    </a>
+                </div>
             </div>
-            <div class="features-label">使い方</div>
-            <div class="use-container">
-                <h3>土作り、元肥時、追肥時にお使いください。<br>
-                水分を与えることでGS菌群は動き始めます。</h3>
-                <table class="feature-table">
-                    <tbody>
-                        <tr>
-                            <td>
-                                使用量の目安<br>
-                                （10Rあたり）</td>
-                            <td>
-                                <ul>
-                                    <li>土作り / 15袋〜30袋を土に混ぜこんでください。</li>
-                                    <li> 元肥・定植時 / 15袋を土に混ぜこむか土の上に撒いてください。</li>
-                                    <li>追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください</li>
-                                    <li> 追肥・マルチ期 / 5袋〜10袋を土に混ぜこむか土の上に撒いてください。</li>
-                                    <li>※ 上記使用量は目安です。作物や施肥量により異なります。</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="related-product">
             <p class="related-product-title">関連商品</p>
@@ -164,7 +166,7 @@
                 </div>
             </div>
         </div>
-        <a class="back-top-btn" href="#header">トップに戻る</a>
+        <a class="back-top-btn" href="#header"><i class="fa-solid fa-angle-up"></i></a>
     </main>
     <footer class="footer-container gensuke-attack-footer">
         <div class="footer-content">
@@ -205,6 +207,9 @@
         </div>
         <p class="footer-text">Copyright(C)有限会社 Ueta LABO All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- swipper javascript -->
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <!-- javascript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
